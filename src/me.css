@@ -1,0 +1,188 @@
+.Fullbody{
+    /* Knowledges*/
+    background-color: black;
+    
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  height: 100vh;
+  
+  }
+.bodyMe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    color: white;
+    margin-left: 250px;
+}
+
+
+.SectionMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 2rem 2rem 0rem;
+    margin: 0 auto; 
+    max-width: 60%;}
+
+
+.titleMe {
+    font-size: 2rem;
+    color: white;
+}
+
+
+.PresentMySelf article {
+    font-size: 20px;
+    background-color: rgba(109, 72, 25, 0.5);
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+
+.softSkills article h1 {
+    color: rgb(156, 105, 39);
+    font-size: 2rem;
+    text-decoration-line: underline;
+    margin-bottom: 2rem;
+}
+
+.softSkills article ul {
+    list-style-type: square;
+}
+
+.softSkills article ul li h3 {
+    color: rgb(156, 98, 28);
+}
+
+
+.origen {
+    width: 80%;
+    padding: 0;
+    margin: 0 auto; 
+}
+
+.origen h1 {
+    width: 100%;
+    color: rgb(156, 105, 39);
+    font-size: 2rem;
+    text-decoration-line: underline;
+    text-align: start;
+}
+
+.origen ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    padding:1rem 0rem;
+    }
+
+.origen ul li{
+
+    max-width: fit-content;
+}
+
+
+
+.origen iframe {
+    border: 10px solid rgba(109, 72, 25, 0.75);
+    border-radius: 30px;
+    margin: 2rem;
+    
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .bodyMe{
+        margin-left: 250px;
+    }
+.SectionMe {
+        max-width: 90%; 
+        margin-top: 1rem;
+    }    
+.softSkills article h1 {
+    margin-bottom: 1rem;
+    }
+    .origen {
+        width: 90%; 
+    }
+    .origen ul{
+        flex-direction: row-reverse;
+
+    }
+ .origen iframe {
+       
+        margin: 1rem ; 
+    }
+
+
+    .origen  p{
+        padding-left: 0;
+    }
+
+   
+}
+
+@media only screen and (max-width: 768px) {
+    .bodyMe{
+        margin-left: 0;
+        margin-top: 123px;
+        padding-bottom: 2rem;
+    }
+ 
+    .SectionMe {
+        max-width: 90%; 
+        padding: 0px;
+        margin-bottom: 1rem;
+    }
+    .SectionMe p{
+    font-size: 1rem;
+    }
+
+    
+    .PresentMySelf article {
+        font-size: 1.5rem; 
+      
+    }
+    
+.softSkills article h1 {
+    margin-bottom: 1rem;
+
+   
+}
+
+
+    
+    .origen{
+        width: 90%; 
+        align-items: center;
+    }
+    .origen h1{
+        max-width: fit-content;
+    }
+    .origen ul{
+        flex-direction: column-reverse;
+        align-items: center;
+      
+     
+    }
+    .origen iframe {
+        max-width: 100%; 
+        margin: 1rem 0; 
+    }
+    .origen  p{
+        padding-left: 2rem;
+    }
+
+   
+}

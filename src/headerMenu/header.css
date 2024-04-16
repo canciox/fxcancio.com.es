@@ -1,0 +1,150 @@
+.MenuBar {
+  background-image: linear-gradient(to bottom, rgb(109, 72, 25), #75787c);
+  position: absolute;
+  width: 250px;
+  height: 100%;
+}
+.divPictureBtn{
+    display: flex;
+    flex-direction: column;
+
+}
+.contactTitle {
+  padding-top: 40px;
+}
+.MyPicture {
+  margin: 1rem;
+  border: 6px solid rgba(250, 250, 250, 0.3);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.MenuBar button {
+  display: none;
+}
+.headerNav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  
+}
+
+.headerNav ul {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  list-style-type: none;
+  width: 100%;
+  height: fit-content;
+  padding-left: 10px;
+}
+
+.headerNav ul li{
+    width: 100%;
+}
+.headerNav  a {
+  height: 100%;
+  width:100%;
+  font-size: 1.4rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+  .MenuBar {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .MyPicture {
+    width: 15vw;
+    height: 15vw;
+    margin: 2rem 8px 8px 8px;
+  }
+
+  .headerNav ul {
+    gap: 1rem;
+    width: 80%;
+    padding: 6px;
+  }
+
+  .headerNav ul li a {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .MenuBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 124px;
+    z-index: 999;
+    background-image: linear-gradient(to bottom, rgb(109, 72, 25), black);
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+  }
+  .divPictureBtn{
+    
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    
+}
+
+
+  .MyPicture {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+  }
+  .MenuBar button {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+  }
+  .MenuBar button:hover {
+    color: red;
+  }
+  .headerNav {
+    width: 100%;
+    display: none;
+  }
+  .headerNav.isActive {
+    padding-top: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, black, rgb(109, 72, 25));
+    height: auto;
+    padding-bottom: 1rem;
+  }
+  .headerNav ul {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .headerNav ul li {
+    width: 100%;
+  }
+  .headerNav ul li a {
+    width: 100%;
+    display: inline-block;
+  }
+  .headerNav ul li Link {
+    width: auto;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}

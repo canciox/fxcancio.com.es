@@ -1,0 +1,163 @@
+.ProyectosFullBody{
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+  background-image:url("/fondoHome.jpg") ;
+  background-size: 100vw;
+  background-position-y: -400px;
+  background-position-x: 100px;
+  background-attachment: fixed;
+  padding-bottom: 4rem;
+  padding-right: 0%;}
+.bodyProyect {
+  margin: 0 ;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+  margin-left: 200px;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+height: 100vh;
+
+}
+.ProyectsLs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+/* cartas que rotan */
+.ProyectCard {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 4rem;
+  margin-bottom: 2rem;
+  perspective: 1000px; /* Añadido para perspectiva */
+}
+
+.ProyectCard div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: transform 2s;
+  width: 100%; 
+  height: 100%; 
+  color: white;
+  padding: 0 2rem;
+}
+
+.ProyectCard .FrontCard,
+.ProyectCard .BackCard {
+  background-color: rgba(109, 72, 25, 0.5);
+  border-radius: 25px;
+  border: 5px solid rgba(109, 72, 25, 0.5);
+  width: 100%;
+  height: 100%; 
+}
+
+.ProyectCard .BackCard {
+  transform: rotateY(180deg); 
+}
+
+.ProyectCard:hover .FrontCard {
+  transform: rotateY(-180deg); 
+}
+
+.ProyectCard:hover .BackCard {
+  transform: rotateY(0deg); 
+}
+
+
+.ProyectsLs article a {
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ProyectsImg {
+  width: 80%;
+  margin: 20px;
+}
+.BackCard p{
+  text-align: start;
+  font-size: 1rem;
+}
+.BackCard a:hover {color: rgb(243, 218, 223);
+  transform: scale(-400px);
+
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .bodyProyect {
+margin-left: 0;
+  }
+  .ProyectsLs{
+    margin-left: 150px;
+  }
+  .ProyectCard {
+
+    width: 200px;
+    height: 300px;
+  }
+  .FrontCard h2 {
+    font-size: 1.5rem;
+  }
+  .BackCard p{
+    text-align: start;
+    font-size: 0.75rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+  .bodyProyect {
+    width: 100vw;
+    margin-top:122px ;
+    align-items: flex-start;
+
+    margin-left:0;
+      }
+  .ProyectsLs{
+        display: flex;
+        flex-flow: column ;
+        align-items: center;
+        width: 100%;
+        margin-left:0px;
+      }
+  .ProyectCard {
+    width: 200px;
+    height: 300px;
+    margin: 1rem;
+      }
+      .FrontCard h2 {
+        font-size: 1.5rem;
+      }
+      .BackCard p{
+        font-size: 0.75rem;
+      }
+    
+    
+    }

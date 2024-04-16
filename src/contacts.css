@@ -1,0 +1,74 @@
+.bodyContact {
+  background-color: black;
+  background-image:url("/fondoHome.jpg") ;
+  background-size: 100vw;
+  background-position-y: -400px;
+  background-position-x: 100px;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.bodyContact main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-left: 250px;
+  padding: 40px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100vh;
+}
+.contactTitle {
+  text-align: center;
+  margin-top: 3rem;
+  color: rgb(156, 105, 39);
+}
+.contacts {
+  padding: 1rem 1rem 1rem 3rem;
+background-color: rgba(156, 105, 39,0.4); 
+border: 6px solid rgb(156, 105, 39);;
+border-radius: 40px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contac h2 {
+  font-size: 1.2rem;
+}
+
+.bodyContact h3 {
+  color: rgb(156, 105, 39);
+}
+.bodyContact h2 {
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+a:hover {
+  color: rgb(243, 218, 223);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .bodyContact main {
+    margin-left: 20vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bodyContact main {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}

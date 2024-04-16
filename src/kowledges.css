@@ -1,0 +1,145 @@
+.FullBody{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100vw;
+  background-color: black;
+  background-image:url("/fondoHome.jpg") ;
+  background-size: 100vw;
+  background-position-y: -500px;
+  background-position-x: 100px;
+  background-attachment: fixed;
+  padding-right: 0%;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+height: 100vh;
+
+}
+.BodyHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin-left: 250px;
+
+}
+
+.subtitles {
+text-align: center;
+  font-size: 3rem;
+  margin-top: 3rem; 
+  margin-bottom:1.5rem;
+  color: rgb(109, 72, 25);
+
+}
+
+.knowledges {
+  display: flex;justify-content: space-evenly;
+   flex-wrap: wrap; 
+   gap: 1.5rem;
+}
+
+.knowledges ul {
+  width: calc(30% - 20px); 
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  padding: 0;
+}
+
+.programName {
+  display: flex;
+
+  align-items: center;
+  width: 1fr;
+  text-align: center;
+  font-size: 1.5rem;
+  list-style-type: none;
+  height: 100%;
+}
+
+.svg {
+  margin: 6px;
+  width: 1fr;
+  height: 100px;
+  list-style-type: none;
+  height: 100%;
+}
+
+.ImgIcon {
+  margin-right: 3px;
+  border-radius: 25px;
+  width: 100px;
+  height: 100px;
+}
+
+.proyects {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 4rem;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .BodyHome {
+      /* margin-left: 250px; */
+    
+      width: 100%;
+  }
+  .BodyHome h1{
+    font-size: 2rem;
+    width: 90%;
+  }
+  .BodyHome h2{
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  .BodyHome h3{
+    font-size: 1.3rem;
+    width: 90%;
+  }
+.programName{
+  font-size: 1rem;
+}
+.ImgIcon{
+  width: 100px;
+  height: 100px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.FullBody{
+  display: flex;
+  flex-direction: column;
+}
+  .BodyHome {
+margin-left: 0px;
+      padding-top: 200px;
+  }
+.subtitles{
+  text-align: center;
+}
+.program{
+  max-width: 200px;
+}
+
+
+  .knowledges ul {
+      width: 100%; 
+  }
+
+}
+
